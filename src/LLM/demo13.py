@@ -15,7 +15,6 @@ class Joke(BaseModel):
 llm = ChatOllama(
     model="llama4",
     temperature=0.7,
-    max_tokens=50,  # Limit output
 )
 
 structured_llm = llm.with_structured_output(Joke)
