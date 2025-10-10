@@ -1,4 +1,5 @@
 from collections.abc import Collection, Sequence
+import json
 
 # Both are collections
 print(isinstance([1, 2, 3], Collection))  # True
@@ -113,7 +114,6 @@ print(aa5)
 aa5[1].append(5)
 print(aa5)  # Output: [[5], [5], [5]] (
 
-import json
 
 data = {"name": "Alice", "age": 30, "city": "New York"}
 json_data = json.dumps(data)
